@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: inherit;
+  height: inherit;
+  filter:  brightness(0.7) blur(2px);
+}
+header hr {
+  width: 60%;
+}
+header div {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+}
+header p {
+  text-align: center;
+}
+/* .profile-section {
+} */
+.profile-section .heading {
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-section .heading::after {
+  position: absolute;
+  border-bottom: 2px solid rgb(177, 173, 173);
+  content: "";
+  width: 100%;
+}
+section h1, footer h1{
+  color: cadetblue;
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+}
+.profile-section .heading p, .second p, .third p, footer p {
+  color: #9aa2a9;
+  font-size: 25px;
+  text-align: center;
+}
+section hr, footer hr {
+  border-style: none;
+  border-top: solid;
+  border-color: #72787847;
+  border-width: 1px;
+  width: 70%;
+}
+.profile-section .container{
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profile-section .container h1 {
+  color: #82d8a0;
+  text-align: left;
+}
+.profile-section .container p {
+  color: #868686;
+  line-height: 1.9;
+  font-size: 18px;
+}
+.profile-section .container img {
+  border-radius: 30px;
+  max-height: 100%;
+  min-width: 100%;
+}
+
+.profile-section .container .About p {
+  width: inherit;
+}
+.profile-section .container .mypic {
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 300px;
+  padding: 60px 20px 0;
+}
+.profile-section .container .details {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.profile-section .container .details .details-content {
+  width: fit-content;
+  margin: auto;
+}
+.profile-section .container .About {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.second {
+  height: 625px;
+  background-color: #f3efe0;
+  padding-top: 25px;
+}
+.second .education, .third .skills {
+  width: 70%;
+  margin: 10px auto;
+}
+.second .education h2, .thrd .skills h2 {
+  color: #82d8a0;
+}
+.second .education table, .third .skills table {
+  width: 100%;
+}
+.second .education table tr:nth-child(odd) {
+  font-size: 19px;
+  font-weight: bold;
+}
+.third {
+  height: 580px;
+}
+.third table table td{
+  font-size: 25px;
+  color: grey;
+}
+footer {
+  height: 625px;
+  background-color: #434242;
+  padding-top: 1px;
+}
+footer h1 {
+  color: white;
+  margin-top: 200px;
+}
+footer .container {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 26px;
+}
+footer a:nth-child(2) {
+  color: white;
+}
+footer a:nth-child(1) {
+  padding: 13px;
+  font-size: 32px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 27%;
+  background: #3B5998;
+  color: white;
+}
